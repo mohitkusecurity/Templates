@@ -823,6 +823,22 @@
                       "[variables('NIC-Name1Ipaddress')]"
                     ],
                     "ruleConditionType": "NetworkRuleCondition"
+                  },
+                  {
+                    "name": "HTTP",
+                    "ipProtocols": [
+                      "TCP"
+                    ],
+                    "destinationPorts": [
+                      "80"
+                    ],
+                    "sourceAddresses": [
+                      "[variables('NIC-Name2Ipaddress')]"
+                    ],
+                    "destinationAddresses": [
+                      "*"
+                    ],
+                    "ruleConditionType": "NetworkRuleCondition"
                   }
                 ]
               }
