@@ -760,7 +760,7 @@
             "priority": 200,
             "rules": [
               {
-                "name": "IntraVNETAccess",
+                "name": "IntraVNETandHTTPOutAccess",
                 "priority": 100,
                 "ruleType": "FirewallPolicyFilterRule",
                 "action": {
@@ -825,7 +825,7 @@
                     "ruleConditionType": "NetworkRuleCondition"
                   },
                   {
-                    "name": "HTTP",
+                    "name": "Kali-HTTP",
                     "ipProtocols": [
                       "TCP"
                     ],
